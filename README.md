@@ -151,11 +151,13 @@ cat newfile | grep -i -c "hello"
 
 grep -R ubuntu /etc
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/49b8fda8-1bc7-4156-bb2e-2d5d32ff4ac3)
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/de00fc26-4e69-4d19-a3b6-ad2ef2cece18)
 
 
 cat < newfile 
@@ -179,16 +181,19 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/e38804c8-4597-4ec6-9280-d2f7ac16a30f)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/128d9e2d-7bc6-4442-9247-ef5e9b946113)
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/d17a63bb-c9dd-46f6-8d58-5d2c9114392c)
 
 
 
@@ -196,42 +201,53 @@ egrep -w '(H|h)ell[a-z]' newfile
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/56563020-ba45-4d8d-ad8f-70dd88417f23)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/640909a5-8377-4ee4-a2b7-005f03ac373b)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/42fd67b2-bbc2-43a8-aba6-88a70ab3709f)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/2ec100bf-a536-4f84-88d7-1360b6a0f992)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/b7ebfd63-2a36-4bb7-a25c-dfa3f459b07c)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/057bbed7-9a35-4d39-ada6-0e86e743a261)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/3c2b7720-fb9d-4721-8e9d-eff7a22856fd)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/10b04381-0bdd-4c21-91b5-0894117caf45)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/4c99a664-b2e4-440b-a2a1-322109bf6550)
+
+
 
 
 cat > file23
@@ -241,6 +257,7 @@ cat > file23
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
 1005 | Sam |  5000 | HR
+
 1004 | Sit |  7000 | Dev
 1003 | Joe |  7000 | Developer
 1001 | Ram | 10000 | HR
@@ -250,80 +267,90 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8bb055cc-967f-4dad-acaf-10c21e2c5057)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/195d4cda-9d57-4981-8f4d-81d47618fc64)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/1992d720-5944-4d46-b91b-c2a3195db819)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/06616f0a-05c8-4f2a-b969-4b35c439b66e)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/da8d44d3-3642-4b1c-bebf-98424bdd704e)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7bfca80b-1ebf-4c64-9fa5-aab3e4c69976)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d4c52b6a-b897-41b9-9251-813206ab786d)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ea0ee694-a2af-4aa2-8509-634c2b4e7a43)
 
 
 
 seq 10 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/b48bce00-30c5-4800-ac28-cc35faff0497)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/ac7040bc-0fcc-4bb3-aa4c-aa4be7bb8e20)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/5c48ec1c-12c7-4f67-8953-e8fcb04a93e2)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d9f95832-1b37-45f2-bb60-865176b382a0)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/18274665-ada6-45bb-8883-c4c7326d288b)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/0500398f-1699-415b-9384-9e032a37cd58)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
-
-
-sed -n '2,4{s/$/*/;p}' file23
-
+![image](https://github.com/user-attachments/assets/d2ca4555-7427-4675-a61c-a4d9eb0da8f0)
 
 #Sorting File content
 cat > file21
@@ -336,6 +363,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/355f3f4f-d081-40e2-934b-38ce6b32ff3e)
 
 
 cat > file22
@@ -350,12 +378,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/60de2c32-1c68-43e5-9bf6-c914e670f6f2)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/e4707a21-c09a-4645-97c0-1ee1ff4561ed)
 
 cat < urllist.txt
 ```
@@ -369,14 +399,18 @@ cat > urllist.txt
 www. yahoo. com
 www. google. com
 www. mrcet.... com
+
+
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/f64851b1-7f19-4147-b7ef-a56f7c4fe517)
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/14b96b35-963a-4e7b-a199-02b698619cf7)
 
 
 
@@ -384,6 +418,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/497161d1-06d1-4845-9aaa-0a019599f53a)
 
 mkdir backupdir
  
@@ -391,15 +426,20 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/266a9a9f-2d41-4bde-943b-5538d34cccb9)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/fa53053f-1b46-4bc0-b934-7f8040f894df)
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/68b178d0-20b6-4c8d-81d8-f649ae43cf7a)
+
  
 gunzip backup.tar.gz
 ## OUTPUT
