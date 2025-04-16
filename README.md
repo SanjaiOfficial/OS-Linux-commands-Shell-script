@@ -3,6 +3,9 @@ Operating systems Lab exercise
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
 
+## NAME : SANJAI L
+## REG NO : 212223230184
+
 # AIM:
 To practice Linux Commands and Shell Scripting
 
